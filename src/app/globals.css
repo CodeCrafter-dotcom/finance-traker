@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  *, ::before, ::after {
+    box-sizing: border-box;
+  }
+
+  button,
+  select,
+  input,
+  summary,
+  a {
+    cursor: pointer;
+  }
+
+  :disabled, [disabled] {
+    cursor: not-allowed;
+  }
+}
+
+*:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+body.is-keyboard {
+  *:focus {
+    outline: 3px solid red;
+    outline-offset: 2px;
+    transition-duration: 0s;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input,
+label,
+a,
+button {
+  transition-duration: 0.2s;
+}
