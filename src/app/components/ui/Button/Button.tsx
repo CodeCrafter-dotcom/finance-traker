@@ -33,8 +33,6 @@ const baseStyles = [`
   select-none cursor-pointer disabled:pointer-events-none disabled:opacity-50 
 `].join(' ').trim()
 
-// расширяет кликабельную зону (hitbox) маленькой кнопки
-const hitBoxStyles = "relative after:content-[''] after:-translate-x-1/2 after:-translate-y-1/2 after:w-11 after:h-11 after:top-1/2 after:left-1/2 after:absolute"
 
 const variants: Record<variantT, string> = {
   tabsNotActiveB: 'py-2 text-sm font-medium text-center text-gray-500 hover:text-gray-800', 
